@@ -41,7 +41,7 @@ module.exports = React.createClass
         </div>
 
         <div className = "#{exp.prefix}__back">
-          <img src={@getValue("qrCode")}>
+          {@props.children}
         </div>
       </div>
     </div>
@@ -73,7 +73,6 @@ module.exports = React.createClass
         return @setState type: name:type, length: 16
 
     return @setState type: name:"unknown", length: 16
-
 
   number:->
     if !@props.number

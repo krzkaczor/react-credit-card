@@ -49,7 +49,7 @@
         "data-after": this.props.expiryAfter
       }, this.getValue("expiry")))), React.createElement("div", {
         "className": "" + exp.prefix + "__back"
-      }, "\x3Cimg src=", this.getValue("qrCode"), "\x3E")));
+      }, this.props.children)));
     },
     displayClassName: function(base) {
       var className;
