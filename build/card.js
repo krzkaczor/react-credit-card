@@ -49,14 +49,7 @@
         "data-after": this.props.expiryAfter
       }, this.getValue("expiry")))), React.createElement("div", {
         "className": "" + exp.prefix + "__back"
-      }, React.createElement("div", {
-        "className": "" + exp.prefix + "__bar"
-      }), React.createElement("div", {
-        "className": this.displayClassName("cvc")
-      }, this.getValue("cvc")), React.createElement("div", {
-        "className": "" + exp.prefix + "__shiny",
-        "data-after": this.props.shinyAfterBack
-      }))));
+      }, "\x3Cimg src=", this.getValue("qrCode"), "\x3E")));
     },
     displayClassName: function(base) {
       var className;

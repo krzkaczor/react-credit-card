@@ -41,9 +41,7 @@ module.exports = React.createClass
         </div>
 
         <div className = "#{exp.prefix}__back">
-          <div className = "#{exp.prefix}__bar"/>
-          <div className = {@displayClassName("cvc")}>{@getValue("cvc")}</div>
-          <div className = "#{exp.prefix}__shiny" data-after = {@props.shinyAfterBack}/>
+          <img src={@getValue("qrCode")}>
         </div>
       </div>
     </div>
