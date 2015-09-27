@@ -120,6 +120,9 @@
       } else {
         string = this.props.number.toString();
       }
+      if (this.props.isEmail) {
+        return string;
+      }
       maxLength = this.state.type.length;
       if (string.length > maxLength) {
         string = string.slice(0, maxLength);

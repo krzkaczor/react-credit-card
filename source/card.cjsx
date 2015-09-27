@@ -80,6 +80,9 @@ module.exports = React.createClass
     else
       string = @props.number.toString()
 
+    if @props.isEmail
+      return string
+
     maxLength = @state.type.length
 
     if string.length > maxLength then string = string.slice(0,maxLength)
